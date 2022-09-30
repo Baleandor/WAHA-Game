@@ -105,6 +105,7 @@ main>div {
 
 .container {
     display: inline-block;
+    user-select: none;
     touch-action: none;
 }
 
@@ -159,6 +160,7 @@ main>div {
 
 .small--building {
     display: inline-block;
+    user-select: none;
     touch-action: none;
 }
 
@@ -189,6 +191,7 @@ main>div {
 
 .medium--building {
     display: inline-block;
+    user-select: none;
     touch-action: none;
 }
 
@@ -235,8 +238,8 @@ main>div {
 
 .large--building {
     display: inline-block;
-    width: 130px;
-    height: 240px;
+    user-select: none;
+   
 }
 
 .model--div {

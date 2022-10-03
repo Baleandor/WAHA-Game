@@ -1,2 +1,1 @@
-# WAHA-Game
-#WAHA-Game
+This is a browser game adaptation of the popular miniature wargame Warhammer 40k.

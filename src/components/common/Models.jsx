@@ -10,6 +10,7 @@ export default function Model({ src, modelData }) {
 
     const bind = useDrag(({ down, offset: [mx, my] }) => {
         api.start({ x: mx, y: my, immediate: down })
+        
     })
 
     function displaySimpleData() {

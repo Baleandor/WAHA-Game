@@ -97,13 +97,14 @@ main>div {
     height: 969px;
 }
 
-.terrain {
+.terrain--collection {
     position: relative;
     height: 969px;
     width: 711px;
 }
 
 .container {
+    cursor: pointer;
     display: inline-block;
     user-select: none;
     touch-action: none;
@@ -114,51 +115,53 @@ main>div {
     height: 93.67px;
 }
 
-#horizontal1 {
+
+#horizontal-1 {
     position: absolute;
     left: 124px;
     bottom: 115px;
 }
 
-#horizontal1>img {
+#horizontal-1>img {
     transform: rotate(90deg);
 }
 
-#horizontal2 {
+#horizontal-2 {
     position: absolute;
     right: 124px;
     top: 115px;
 }
 
-#horizontal2>img {
+#horizontal-2>img {
     transform: rotate(90deg);
 }
 
-#container1 {
+#container-1 {
     position: absolute;
     left: 60px;
     bottom: 153.42px;
 }
 
-#container2 {
+#container-2 {
     position: absolute;
     left: 188px;
     bottom: 84px;
 }
 
-#container3 {
+#container-3 {
     position: absolute;
     right: 60px;
     top: 153.42px;
 }
 
-#container4 {
+#container-4 {
     position: absolute;
     right: 189px;
     top: 84px;
 }
 
 .small--building {
+    cursor: pointer;
     display: inline-block;
     user-select: none;
     touch-action: none;
@@ -169,27 +172,28 @@ main>div {
     height: 120px;
 }
 
-#small1 {
+#small-1 {
     position: absolute;
     top: 350px;
     left: 35px;
 }
 
-#small1>img {
+#small-1>img {
     transform: rotate(360deg);
 }
 
-#small2{
+#small-2 {
     position: absolute;
     bottom: 350px;
     right: 35px;
 }
 
-#small2>img {
+#small-2>img {
     transform: rotate(180deg);
 }
 
 .medium--building {
+    cursor: pointer;
     display: inline-block;
     user-select: none;
     touch-action: none;
@@ -200,49 +204,116 @@ main>div {
     width: 170px;
 }
 
-#medium1 {
+#medium-1 {
     position: absolute;
     bottom: 290px;
     left: 170px;
 }
 
-#medium1>img {
+#medium-1>img {
     transform: rotate(0.63turn);
 }
 
-#medium2 {
+#medium-2 {
     position: absolute;
     bottom: 78px;
     right: 105px;
 }
 
-#medium2>img {
+#medium-2>img {
     transform: rotate(180deg);
 }
 
-#medium3 {
+#medium-3 {
     position: absolute;
     top: 290px;
     right: 170px;
 }
 
-#medium3>img {
+#medium-3>img {
     transform: rotate(0.13turn);
 }
 
-#medium4 {
+#medium-4 {
     position: absolute;
     top: 78px;
     left: 105px;
 }
 
 .large--building {
+    cursor: pointer;
     display: inline-block;
     user-select: none;
-   
 }
 
+.brief--terrain--info {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.brief--terrain--info::before {
+    padding: 5px;
+    border-radius: 3px;
+    width: max-content;
+    content: attr(data-brief);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+}
+
+.container:hover .brief--terrain--info {
+    z-index: 1;
+    display: inline;
+    top: 0;
+}
+
+.small--building:hover .brief--terrain--info {
+    z-index: 1;
+    display: inline;
+    top: 0;
+}
+
+.medium--building:hover .brief--terrain--info {
+    z-index: 1;
+    display: inline;
+    top: 0;
+}
+
+.detailed--terrain--info {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.detailed--terrain--info::before {
+    padding: 5px;
+    border-radius: 3px;
+    width: max-content;
+    content: attr(data-detailed);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+}
+
+
+
+
+
 .model--div {
+    cursor: pointer;
     display: inline-block;
     user-select: none;
     touch-action: none;

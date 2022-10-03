@@ -1,11 +1,12 @@
 import React from "react"
 
-
+import TerrainCollection from "../components/terrainManager";
 import { modelsData } from "../models/allModelsDatasheets";
-import { Terrain, Model, Image } from "../components/index"
+import { Model } from "../components/common/index"
 
 
 export default function InGame() {
+
 
 
     return (
@@ -13,35 +14,18 @@ export default function InGame() {
             <div></div>
 
             <div className="playing--mat">
-                <div className="terrain">
+                <TerrainCollection />
 
-                    <Terrain src={"/images/maps/containerboogaloo.png"} className="container" id="horizontal1" />
-                    <Terrain src={"/images/maps/containerboogaloo.png"} className="container" id="horizontal2" />
-                    <Terrain src={"/images/maps/containerboogaloo.png"} className="container" id="container1" />
-                    <Terrain src={"/images/maps/containerboogaloo.png"} className="container" id="container2" />
-                    <Terrain src={"/images/maps/containerboogaloo.png"} className="container" id="container3" />
-                    <Terrain src={"/images/maps/containerboogaloo.png"} className="container" id="container4" />
+                {/* <div className="players">
 
-                    <Terrain src={"/images/maps/smallbuildingthreefloors.png"} className={"small--building"} id="small1" />
-                    <Terrain src={"/images/maps/smallbuildingthreefloors.png"} className={"small--building"} id="small2" />
-
-                    <Terrain src={"/images/maps/middlebuilding.png"} className={"medium--building"} id="medium1" />
-                    <Terrain src={"/images/maps/middlebuilding.png"} className={"medium--building"} id="medium2" />
-                    <Terrain src={"/images/maps/middlebuilding.png"} className={"medium--building"} id="medium3" />
-                    <Terrain src={"/images/maps/middlebuilding.png"} className={"medium--building"} id="medium4" />
-
-                    <div className="players">
-
-                        <div className="red--player">
-                            <Model src={modelsData.orks.HQ["Ghazghul Thrakka"].image} />
-                        </div>
-
-                        <div className="blue--player">
-                            <Model src={modelsData.orks.HQ["Ghazghul Thrakka"].image} />
-                        </div>
+                    <div className="red--player">
+                        <Model src={modelsData.orks.HQ["Ghazghul Thrakka"].image} />
                     </div>
 
-                </div>
+                    <div className="blue--player">
+                        <Model src={modelsData.orks.HQ["Ghazghul Thrakka"].image} />
+                    </div>
+                </div> */}
             </div>
 
             <div></div>

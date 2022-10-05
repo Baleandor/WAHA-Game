@@ -51,5 +51,8 @@ INFANTRY, BEAST and SWARM models can move through the floors, ceilings and gantr
     Breachable: `INFANTRY, BEAST and SWARM models can move through walls, girders, chains and foliage.`,
     Defensible: `INFANTRY units can Hold Steady or Set to Defend (if no enemy within Engagement Range). 
     Hold Steady: Overwatch attacks hit on 5+. 
-    Set to Defend: Cannot fire Overwatch but add 1 to hit rolls in next Fight phase.`
+    Set to Defend: Cannot fire Overwatch but add 1 to hit rolls in next Fight phase.`,
+    Obscuring: `Blocks visibility if at least 5” tall.
+    Models on or within can see and be seen normally.
+    AIRCRAFT and models with W characteristic of 18+ can be seen normally.`
 }

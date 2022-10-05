@@ -288,23 +288,24 @@ main>div {
 
 .detailed--terrain--info {
     display: none;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: fixed;
+    top: 0;
+    right: 0;
     background-color: #333;
     color: white;
-    justify-content: center;
-    white-space: nowrap;
+    justify-content: left;
+    width: 600px;
+
 }
 
 .detailed--terrain--info::before {
     padding: 5px;
     border-radius: 3px;
-    width: max-content;
     content: attr(data-detailed);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 600px;
     background-color: #333;
 }
 

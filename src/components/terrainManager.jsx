@@ -11,21 +11,21 @@ export default function TerrainCollection() {
         src: '/images/maps/containerboogaloo.png',
         className: 'container',
         dataBrief: Object.keys(CONTAINER_FEATURES).join(', '),
-        dataDetailed: Object.keys(CONTAINER_FEATURES).map((k) => `${k}: ${CONTAINER_FEATURES[k]}`).join('\n')
+        dataDetailed: Object.entries(CONTAINER_FEATURES).map(([key, value]) => `${key}: ${value}`).join('\n')
     }
 
     const mediumBuildingProps = {
         src: '/images/maps/middlebuilding.png',
         className: 'medium--building',
         dataBrief: Object.keys(MEDIUM_BUILDING_FEATURES).join(', '),
-        dataDetailed: Object.keys(MEDIUM_BUILDING_FEATURES).map((k) => `${k}: ${MEDIUM_BUILDING_FEATURES[k]} \n`)
+        dataDetailed: Object.entries(MEDIUM_BUILDING_FEATURES).map(([key, value]) => `${key}: ${value}`).join('\n')
     }
 
     const smallBuildingProps = {
         src: '/images/maps/smallbuildingthreefloors.png',
         className: 'small--building',
         dataBrief: Object.keys(SMALL_BUILDING_FEATURES).join(', '),
-        dataDetailed: Object.keys(SMALL_BUILDING_FEATURES).map((k) => `${k}: ${SMALL_BUILDING_FEATURES[k]} \n`)
+        dataDetailed: Object.entries(SMALL_BUILDING_FEATURES).map(([key, value]) => `${key}: ${value}`).join('\n')
     }
 
     return (
@@ -36,7 +36,6 @@ export default function TerrainCollection() {
             <Terrain {...containerProps} id="container-2" />
             <Terrain {...containerProps} id="container-3" />
             <Terrain {...containerProps} id="container-4" />
-
 
             <Terrain {...smallBuildingProps} id="small-1" />
             <Terrain {...smallBuildingProps} id="small-2" />

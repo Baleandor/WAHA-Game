@@ -261,7 +261,7 @@ main>div {
     padding: 5px;
     border-radius: 3px;
     width: max-content;
-    content: attr(data-brief);
+    content: attr(data);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -287,7 +287,7 @@ main>div {
 }
 
 .detailed--terrain--info {
-    display: none;
+    display: inline;
     position: fixed;
     top: 0;
     right: 0;
@@ -295,18 +295,20 @@ main>div {
     color: white;
     justify-content: left;
     width: 600px;
+    white-space: pre-line
 
 }
 
 .detailed--terrain--info::before {
     padding: 5px;
     border-radius: 3px;
-    content: attr(data-detailed);
+    content: attr(data);
     position: fixed;
     top: 0;
     right: 0;
     width: 600px;
     background-color: #333;
+    white-space: pre-line
 }
 
 

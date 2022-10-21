@@ -56,3 +56,28 @@ INFANTRY, BEAST and SWARM models can move through the floors, ceilings and gantr
     Models on or within can see and be seen normally.
     AIRCRAFT and models with W characteristic of 18+ can be seen normally.`
 }
+
+export const containerProps = {
+    src: '/images/maps/containerboogaloo.png',
+    className: 'container',
+    dataBrief: Object.keys(CONTAINER_FEATURES).join(', '),
+    dataDetailed: getDetailedTerrainInfo(CONTAINER_FEATURES)
+}
+
+export const mediumBuildingProps = {
+    src: '/images/maps/middlebuilding.png',
+    className: 'medium--building',
+    dataBrief: Object.keys(MEDIUM_BUILDING_FEATURES).join(', '),
+    dataDetailed: getDetailedTerrainInfo(MEDIUM_BUILDING_FEATURES)
+}
+
+export const smallBuildingProps = {
+    src: '/images/maps/smallbuildingthreefloors.png',
+    className: 'small--building',
+    dataBrief: Object.keys(SMALL_BUILDING_FEATURES).join(', '),
+    dataDetailed: getDetailedTerrainInfo(SMALL_BUILDING_FEATURES)
+}
+
+function getDetailedTerrainInfo(terrain) {
+    return Object.entries(terrain).map(([key, value]) => `${key}: ${value}`).join('\n')
+}

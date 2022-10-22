@@ -6,9 +6,8 @@ import { mediumBuildingProps } from "../constants/terrainFeatures"
 import { smallBuildingProps } from "../constants/terrainFeatures"
 
 export default function TerrainCollection() {
-
     return (
-        <div className="terrain--collection">
+        <div className="terrain--collection" >
             <Terrain {...containerProps} id="horizontal-1" />
             <Terrain {...containerProps} id="horizontal-2" />
             <Terrain {...containerProps} id="container-1" />

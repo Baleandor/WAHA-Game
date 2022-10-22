@@ -13,7 +13,7 @@ export default function InGame() {
 
             <div className="playing--mat" >
                 <TerrainCollection />
-                <div className="players">
+                {/* <div className="players">
 
                     <div className="red--player">
                         <Model src={modelsData.orks.HQ["Ghazghul Thrakka"].image} />
@@ -22,7 +22,7 @@ export default function InGame() {
                     <div className="blue--player">
                         <Model src={modelsData.orks.HQ["Ghazghul Thrakka"].image} />
                     </div>
-                </div>
+                </div> */}
 
             </div>
 

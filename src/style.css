@@ -260,7 +260,7 @@ main>div {
     color: white;
     justify-content: center;
     white-space: nowrap;
-    z-index: 1;
+    z-index: 3;
 }
 
 .detailed--terrain--info {
@@ -274,12 +274,54 @@ main>div {
     color: white;
     justify-content: left;
     width: 600px;
-    white-space: pre-line
+    white-space: pre-line;
+    z-index: 1;
+    
+}
+
+.objective--marker {
+    display: inline-block;
+    user-select: none;
+    touch-action: none;
+    position: absolute;
+    width: 96.9px;
+}
+
+.objective--marker:hover {
+    z-index: 3;
+    cursor: pointer;
+}
+
+#objective--marker-1 {
+    top: 390px;
+    right: 60px;
+}
+
+#objective--marker-2 {
+    bottom: 380px;
+    left: 60px;
+}
+
+#objective--marker-3 {
+    bottom: 435px;
+    right: 310px;
+}
+
+#objective--marker-4 {
+    bottom: 170px;
+    right: 130px;
+}
+
+#objective--marker-5 {
+    top: 170px;
+    left: 130px;
 }
 
 
+
+
 .model--div {
-    z-index: 2;
+    z-index: 5;
     cursor: pointer;
     display: inline-block;
     user-select: none;
@@ -287,7 +329,6 @@ main>div {
 }
 
 .model--div>img {
-    z-index: 2;
     width: 50.87px;
     height: 50.87px;
     clip-path: circle();

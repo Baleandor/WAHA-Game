@@ -4,6 +4,7 @@ import { Terrain } from "./common"
 import { containerProps } from "../constants/terrainFeatures"
 import { mediumBuildingProps } from "../constants/terrainFeatures"
 import { smallBuildingProps } from "../constants/terrainFeatures"
+import ObjectiveMarker from "./common/ObjectiveMarker"
 
 export default function TerrainCollection() {
     return (
@@ -22,6 +23,12 @@ export default function TerrainCollection() {
             <Terrain {...mediumBuildingProps} id="medium-2" />
             <Terrain {...mediumBuildingProps} id="medium-3" />
             <Terrain {...mediumBuildingProps} id="medium-4" />
+
+            <ObjectiveMarker id="objective--marker-1" />
+            <ObjectiveMarker id="objective--marker-2" />
+            <ObjectiveMarker id="objective--marker-3" />
+            <ObjectiveMarker id="objective--marker-4" />
+            <ObjectiveMarker id="objective--marker-5" />
         </div >
     )
 }
